@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Login">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TrackIT!"
+    android:textStyle="bold"
+    android:textSize="30dp"
+    android:paddingBottom="20dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get to it"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingBottom="20dp"/>
+    <!--Email-->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Email Address"
+        android:background="@drawable/edittext_border"
+        android:inputType="textEmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+    <!--Password-->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Password"
+        android:background="@drawable/edittext_border"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+    <!--Button Sign In-->
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E59532"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign In"
+        android:textColor="#FFFFFF" />
+    <!--ForgotPassword-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Forgot Password?"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="Don't have an account? Sign upn here"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+</LinearLayout>
